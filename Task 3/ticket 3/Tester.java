@@ -1,8 +1,7 @@
 package task3;
 
 public class Tester extends Worker {
-    public Tester(int idname, String firstname, String lastname,int salary) {
-        super(idname, firstname, lastname,salary);
-        TotalMonthlySalary.sum.sumsalary(salary);
+    public Tester(int id, String firstName, String lastName, int salary) {
+        super(id, firstName, lastName,salary);
     }
 }

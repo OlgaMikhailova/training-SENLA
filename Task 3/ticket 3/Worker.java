@@ -1,48 +1,42 @@
 package task3;
 
-public class Worker {
-    private int idname;
-    private String firstname;
-    private String lastname;
+public  abstract class Worker {
+    private int id;
+    private String firstName;
+    private String lastName;
     private int salary;
 
-    public Worker(int idname,String firstname, String lastname,int salary) {
-        this.firstname = firstname;
-        this.lastname =lastname;
-        this.idname = idname;
+    public Worker(int id,String firstName, String lastName,int salary) {
+        this.firstName = firstName;
+        this.lastName =lastName;
+        this.id = id;
         this.salary = salary;
+        SalaryCalculator.sum.sumsalary(salary);
     }
 
-    public int getIdname()
-    {
-        return this.idname;
+    public int getid() {
+        return this.id;
     }
-    public void setIdname(int idname)
-    {
-        this.idname = idname;
+    public void setid(int id) {
+        this.id = id;
     }
-    public String getFirstname()
-    {
-        return this.firstname;
+    public String getfirstName() {
+        return this.firstName;
     }
-    public void setFirstname(String firstname)
-    {
-        this.firstname = firstname;
+    public void setfirstName(String firstName) {
+        this.firstName = firstName;
     }
-    public String getLastname()
-    {
-        return this.lastname;
+    public String getlastName() {
+        return this.lastName;
     }
-    public void setLastname(String lastname)
-    {
-        this.lastname = lastname;
+    public void setlastName(String lastName) {
+        this.lastName = lastName;
     }
-    public int getSalary()
-    {
+    public int getSalary() {
         return this.salary;
     }
-    public void setSalary(int salary)
-    {
+    public void setSalary(int salary) {
+
         this.salary = salary;
     }
 }
