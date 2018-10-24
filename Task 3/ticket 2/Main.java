@@ -1,5 +1,5 @@
 public class Main {
-    public static final int UPPER_BOUND_RANDOM = 1000;
+    public static final int UPPER_BOUND_RANDOM = 1000 - 100;
     
     public static void main(String[] args){
         int first = IntGenerator.getInt(UPPER_BOUND_RANDOM);
