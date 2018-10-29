@@ -1,15 +1,14 @@
-package task3;
+import java.util.List;
 
 public class SalaryCalculator {
-    public static int sumOfEmployees;
-    public static class sum{
-        public static void sumsalary(int salary){
-            sumOfEmployees += salary;
-            System.out.println(sumOfEmployees);
+    public  static double SumSalary(List<Worker> workerList){
+        double sumSalary = 0;
+        for (Worker worker : workerList){
+            sumSalary += worker.getSalary();
         }
+        return sumSalary;
     }
-    public static double averageMonthlySalary(int numberOfEmployees){
-        double averageSalary = (double) sumOfEmployees/(double) numberOfEmployees;
-        return averageSalary;
+    public static double AverageMonthlySalary(int numberOfEmployees, double sumSalary){
+        return  sumSalary/(double) numberOfEmployees;
     }
 }
